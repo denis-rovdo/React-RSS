@@ -22,7 +22,6 @@
   
   .navigationBarItem a {
     text-decoration: none;
-    color: #666;
     font-weight: bold;
     text-transform: uppercase;
     padding: 0.5rem;
@@ -30,6 +29,13 @@
   }
   
   .navigationBarItem a:hover {
-    color: #000;
-    background-color: #f8f8f8;
+    background-color: #5fcfff;
+    border-radius: 20px;
   }
+
+
+.navigationBarItemActive {
+    color: #000;
+    background-color: #0ea9eb;
+    border-radius: 20px;
+}
