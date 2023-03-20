@@ -8,12 +8,11 @@ class SearchBar extends Component {
 
   handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     this.setState({ searchTerm: e.target.value });
+    localStorage.setItem('searchTermInput12347', this.state.searchTerm);
   };
 
   handleSubmit = (e: React.ChangeEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    console.log(this.state.searchTerm);
-    localStorage.setItem('searchTermInput12347', this.state.searchTerm);
   };
 
   render() {
