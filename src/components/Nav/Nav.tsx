@@ -1,6 +1,6 @@
 import React, { Component, ReactNode } from 'react';
 import { NavLink } from 'react-router-dom';
-import stule from './Nav.module.scss';
+import styles from './Nav.module.scss';
 
 const pages = [
   {
@@ -16,15 +16,15 @@ const pages = [
 class Nav extends Component {
   render(): ReactNode {
     return (
-      <div className={stule.navigationBarContainer}>
-        <ul className={stule.navigationBarList}>
+      <div className={styles.navigationBarContainer}>
+        <ul className={styles.navigationBarList}>
           {pages.map((page, index) => {
             return (
-              <li className={stule.navigationBarItem} key={index}>
+              <li className={styles.navigationBarItem} key={index}>
                 <NavLink
                   to={page.path}
                   className={({ isActive }) => {
-                    return isActive ? `${stule.navigationBarItemActive}` : '';
+                    return isActive ? `${styles.navigationBarItemActive}` : '';
                   }}
                 >
                   {page.text}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import stules from './SearchBar.module.scss';
+import styles from './SearchBar.module.scss';
 
 class SearchBar extends Component {
   state = {
@@ -8,8 +8,11 @@ class SearchBar extends Component {
 
   handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     this.setState({ searchTerm: e.target.value });
-    localStorage.setItem('searchTermInput12347', this.state.searchTerm);
   };
+
+  componentWillUnmount(): void {
+    localStorage.setItem('searchTermInput12347', this.state.searchTerm);
+  }
 
   handleSubmit = (e: React.ChangeEvent<HTMLFormElement>): void => {
     e.preventDefault();
@@ -17,17 +20,17 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div className={stules.searchPanelContainer}>
-        <form className={stules.searchForm} onSubmit={this.handleSubmit}>
+      <div className={styles.searchPanelContainer}>
+        <form className={styles.searchForm} onSubmit={this.handleSubmit}>
           <input
             type="text"
-            className={stules.searchInput}
+            className={styles.searchInput}
             placeholder="Search..."
             value={this.state.searchTerm}
             onChange={this.handleInputChange}
           />
-          <button type="submit" className={stules.searchButton}>
-            <i className={`${stules.fas} ${stules.faSearch}`}>Search</i>
+          <button type="submit" className={styles.searchButton}>
+            <i className={`${styles.fas} ${styles.faSearch}`}>Search</i>
           </button>
         </form>
       </div>

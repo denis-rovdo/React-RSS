@@ -1,4 +1,4 @@
-import { Product } from 'data/data';
+import { Product } from '../../data/data';
 import React, { Component, ReactNode } from 'react';
 import CardStyle from './Card.module.scss';
 

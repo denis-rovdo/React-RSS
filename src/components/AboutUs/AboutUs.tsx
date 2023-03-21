@@ -1,13 +1,13 @@
 import React from 'react';
-import stule from './AboutUs.module.scss';
+import styles from './AboutUs.module.scss';
 
 const AboutUs = () => {
   return (
-    <div className={stule.aboutUs}>
-      <div className={stule.aboutUsHeader}>
+    <div className={styles.aboutUs}>
+      <div className={styles.aboutUsHeader}>
         <h1>About Us</h1>
       </div>
-      <div className={stule.aboutUsContent}>
+      <div className={styles.aboutUsContent}>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum justo massa, eget
           lacinia leo ullamcorper non. Fusce sit amet neque in sapien accumsan vehicula. Integer
