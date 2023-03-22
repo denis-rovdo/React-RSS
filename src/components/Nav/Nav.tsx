@@ -16,7 +16,7 @@ const pages = [
 class Nav extends Component {
   render(): ReactNode {
     return (
-      <div className={styles.navigationBarContainer}>
+      <nav className={styles.navigationBarContainer}>
         <ul className={styles.navigationBarList}>
           {pages.map((page, index) => {
             return (
@@ -33,7 +33,7 @@ class Nav extends Component {
             );
           })}
         </ul>
-      </div>
+      </nav>
     );
   }
 }
