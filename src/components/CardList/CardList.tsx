@@ -1,4 +1,4 @@
-import Card from '../Card/Card';
+import Card from './Card/Card';
 import { Product, products } from '../../data/data';
 import React, { Component, ReactNode } from 'react';
 import cardListStyles from './CardList.module.scss';

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, ReactNode } from 'react';
 import styles from './NotFound.module.scss';
 
 class NotFound extends Component {
-  render(): React.ReactNode {
+  render(): ReactNode {
     return (
       <div className={styles.notFoundContainer}>
         <h1 className={styles.notFoundHeader}>404</h1>

@@ -11,6 +11,10 @@ const pages = [
     path: '/about',
     text: 'About Us',
   },
+  {
+    path: '/form',
+    text: 'Form',
+  },
 ];
 
 class Nav extends Component {
