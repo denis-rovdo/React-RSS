@@ -1,0 +1,67 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .label {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  .select {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  .radioLabel {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .radio {
+    margin-right: 0.5rem;
+  }
+  
+  .checkboxLabel {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox {
+    margin-right: 0.5rem;
+  }
+  
+  .button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #0077c2;
+    color: #fff;
+    cursor: pointer;
+  }
+  
